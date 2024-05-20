@@ -77,6 +77,7 @@ INSERT INTO pegawai (id_pegawai, nama_depan, nama_belakang, email, telepon, tgl_
    ```sql
    SELECT MAX(gaji) AS Gaji_Terbesar FROM pegawai;
    ```
+   ![](Foto/10.png)
 
    
 
