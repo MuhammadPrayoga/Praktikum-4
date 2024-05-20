@@ -79,6 +79,31 @@ INSERT INTO pegawai (id_pegawai, nama_depan, nama_belakang, email, telepon, tgl_
    ```
    ![](Foto/9.png)
 
+## Membuat Table Hewan
+```sql
+CREATE TABLE hewan (
+    id VARCHAR(10) PRIMARY KEY,
+    name VARCHAR(50),
+    owner VARCHAR(50),
+    species VARCHAR(50),
+    sex CHAR(1)
+);
+```
+
+## Memasukkan Data ke Dalam Table
+```sql
+INSERT INTO hewan (id, name, owner, species, sex) VALUES
+('P1', 'Puffball', 'Diane', 'Hamster', 'f'),
+('P2', 'Claws', 'Gwen', 'cat', 'm'),
+('P3', 'Fluffy', 'Haro 1d', 'cat', 'f'),
+('P4', 'Buffy', 'Haro 1d', 'dog', 'f'),
+('P5', 'Fang', 'Benny', 'dog', 'm'),
+('P6', 'Bowser', 'Diane', 'dog', 'm'),
+('P7', 'Chirpy', 'Gwen', 'bird', 'f'),
+('P8', 'Whistler', 'Gwen', 'bird', NULL),
+('P9', 'Slim', 'Benny', 'snake', 'm');
+```
+
    
 
 
