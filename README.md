@@ -65,19 +65,19 @@ INSERT INTO pegawai (id_pegawai, nama_depan, nama_belakang, email, telepon, tgl_
    ```sql
    SELECT AVG(gaji) AS Rata_Rata_Gaji FROM pegawai;
    ```
-   ![](Foto/8.png)
+   ![](Foto/10.png)
 
 7. Tampilkan gaji terkecil!
    ```sql
    SELECT MIN(gaji) AS Gaji_Terkecil FROM pegawai;
    ```
-   ![](Foto/9.png)
+   ![](Foto/8.png)
 
 8. Tampilkan gaji terbesar!
    ```sql
    SELECT MAX(gaji) AS Gaji_Terbesar FROM pegawai;
    ```
-   ![](Foto/10.png)
+   ![](Foto/9.png)
 
    
 
