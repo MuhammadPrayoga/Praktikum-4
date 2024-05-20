@@ -103,6 +103,58 @@ INSERT INTO hewan (id, name, owner, species, sex) VALUES
 ('P8', 'Whistler', 'Gwen', 'bird', NULL),
 ('P9', 'Slim', 'Benny', 'snake', 'm');
 ```
+![](Foto/11.png)
+
+1. Tampilkan jumlah hewan yang dimiliki setiap owner.
+   ```sql
+   SELECT owner, COUNT(*) AS jumlah_hewan
+   FROM hewan
+   GROUP BY owner;
+   ```
+   ![](Foto/12.png)
+
+2. Tampilkan jumlah hewan berdasarkan spesies
+   ```sql
+   SELECT species, COUNT(*) AS jumlah_hewan
+   FROM hewan
+   GROUP BY species;
+   ```
+   ![](Foto/13.png)
+
+3. Tampilkan jumlah hewan berdasarkan jenis kelamin
+   ```sql
+   SELECT sex, COUNT(*) AS jumlah_hewan
+   FROM hewan
+   GROUP BY sex;
+   ```
+   ![](Foto/14.png)
+
+4. Tampilkan jumlah hewan berdasarkan spesies dan jenis kelamin
+   ```sql
+   SELECT species, sex, COUNT(*) AS jumlah_hewan
+   FROM hewan
+   GROUP BY species, sex;
+   ```
+   ![](Foto/15.png)
+
+5. Tampilkan jumlah hewan berdasarkan spesis (cat dan dog saja) dan jenis kelamin
+   ```sql
+   SELECT species, sex, COUNT(*) AS jumlah_hewan
+   FROM hewan
+   WHERE species IN ('cat', 'dog')
+   GROUP BY species, sex;
+   ```
+   ![](Foto/16.png)
+
+6. Tampilkan jumlah hewan berdasarkan jenis kelamin yang diketahui
+saja
+    ```sql
+    SELECT sex, COUNT(*) AS jumlah_hewan
+    FROM hewan
+    WHERE sex IS NOT NULL
+    GROUP BY sex;
+    ```
+    ![](Foto/17.png)
 
    
 
